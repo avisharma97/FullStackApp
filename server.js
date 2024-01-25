@@ -27,9 +27,9 @@ app.use("/api/v1/post", require("./routes/PostRoutes"));
 app.get("/",(req,resp)=>{
   resp.status(200).send({
     "success":true,
-    "msg":"Node server running",
+    "msg":"Node server running"
   })
-  
+})
 
 // PORT
 const PORT = process.env.PORT || 5000;
