@@ -99,7 +99,7 @@ const loginController = async (req, resp) => {
 
     // TOKEN
     const token = await JWT.sign({ _id: user._id }, process.env.JWT_SECRET, {
-      dexpiresIn: "7d",
+      expiresIn: "7d",
     });
 
     // undefined password
